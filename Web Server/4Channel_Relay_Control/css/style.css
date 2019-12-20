@@ -1,0 +1,493 @@
+
+body {
+  font-size: 50.5%;
+  background-color: #fff;
+  margin: 10px;
+  border: 1px solid #333;
+  background-image:url("main-bg.jpg"); background-repeat: repeat; background-position: top left; background-attachment: scroll;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+h1{
+  font-family: 'PT Sans', sans-serif;
+}
+h2, h3 {
+  font-family: 'PT Sans', sans-serif;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 2.4em;
+  background-color: #292929;
+  text-align: center;
+  padding: 20px;
+  margin: 0;
+  color: #fff;
+}
+h1 a {
+  display: block;
+  margin-top: 10px;
+  text-transform: none;
+  color: #aaa;
+  font-size: 16px;
+  text-decoration: none;
+}
+h1 .piimage {
+  height: 40px;
+  width: 30px;
+}
+
+.content {
+      width: 50%;
+      height: 300px;
+      float: left;
+}
+.content1 {
+      width: 50%;
+      height: 300px;
+      float: left;
+}
+.footer {
+      height: 100px;
+      background: #333;
+      clear: both;
+}
+.footer a{
+  font-family: 'PT Sans', sans-serif;
+  display: block;
+  padding-top: 20px;
+  color: #aaa;
+  font-size: 16px;
+  text-decoration: none;
+}
+.headingOuter {
+  background: #f1f1f1;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 0;
+  padding: 10px;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+  font-size: 1.6em;
+}
+.headingOuter:first-child {
+  margin-top: 0;
+}
+h1 + .headingOuter {
+  margin-top: 0;
+}
+
+
+.headingOuter1 {
+  background: #f1f1f1;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 0;
+  padding: 10px;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+  font-size: 1.6em;
+}
+.headingOuter1:first-child {
+  margin-top: 0;
+}
+h1 + .headingOuter1 {
+  margin-top: 0;
+}
+
+.toggle {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  user-select: none;
+}
+
+.toggle--checkbox {
+  display: none;
+}
+
+.toggle--btn {
+  display: block;
+  margin: 0 auto;
+  font-size: 1.4em;
+  transition: all 350ms ease-in;
+}
+.toggle--btn:hover {
+  cursor: pointer;
+}
+
+.toggle--btn, .toggle--btn:before, .toggle--btn:after,
+.toggle--checkbox,
+.toggle--checkbox:before,
+.toggle--checkbox:after,
+.toggle--feature,
+.toggle--feature:before,
+.toggle--feature:after {
+  transition: all 250ms ease-in;
+}
+.toggle--btn:before, .toggle--btn:after,
+.toggle--checkbox:before,
+.toggle--checkbox:after,
+.toggle--feature:before,
+.toggle--feature:after {
+  content: '';
+  display: block;
+}
+
+.toggle--knob .toggle--btn {
+  position: relative;
+  width: 120px;
+  height: 40px;
+  font-family: 'PT Sans', Sans Serif;
+  text-transform: uppercase;
+  color: #fff;
+  background: #da3c45;
+  box-shadow: inset 0 20px 40px -10px #da3c45;
+  border-radius: 40px;
+}
+.toggle--knob .toggle--btn:before {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  transform: translateY(-50%);
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #f1f1f1;
+  box-shadow: 0 4px 10px 0 #999, inset 0 10px 10px 8px rgba(241, 241, 241, 0.6), inset 0 0 8px 0px #333, inset 0 0 0 13px #ccc, inset 0 0 0 14px #f1f1f1;
+  text-indent: -100%;
+}
+.toggle--knob .toggle--feature {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  height: 40px;
+  text-shadow: 0 1px 2px #666;
+}
+.toggle--knob .toggle--feature:before, .toggle--knob .toggle--feature:after {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.toggle--knob .toggle--feature:before {
+  content: attr(data-label-on);
+  left: 20%;
+}
+.toggle--knob .toggle--feature:after {
+  content: attr(data-label-off);
+  right: -60%;
+}
+.toggle--knob .toggle--checkbox:checked + .toggle--btn {
+  background: #a2a2a2;
+  box-shadow: inset 0 20px 40px -10px #7e7e7e;
+}
+.toggle--knob .toggle--checkbox:checked + .toggle--btn:before {
+  left: 0;
+}
+.toggle--knob .toggle--checkbox:checked + .toggle--btn .toggle--feature:before {
+  left: -60%;
+}
+.toggle--knob .toggle--checkbox:checked + .toggle--btn .toggle--feature:after {
+  right: 20%;
+}
+
+.toggle1 {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  user-select: none;
+}
+
+.toggle--checkbox1 {
+  display: none;
+}
+
+.toggle--btn1 {
+  display: block;
+  margin: 0 auto;
+  font-size: 1.4em;
+  transition: all 350ms ease-in;
+}
+.toggle--btn1:hover {
+  cursor: pointer;
+}
+
+.toggle--btn1, .toggle--btn1:before, .toggle--btn1:after,
+.toggle--checkbox1,
+.toggle--checkbox1:before,
+.toggle--checkbox1:after,
+.toggle--feature1,
+.toggle--feature1:before,
+.toggle--feature1:after {
+  transition: all 250ms ease-in;
+}
+.toggle--btn1:before, .toggle--btn1:after,
+.toggle--checkbox1:before,
+.toggle--checkbox1:after,
+.toggle--feature1:before,
+.toggle--feature1:after {
+  content: '';
+  display: block;
+}
+
+.toggle--knob1 .toggle--btn1 {
+  position: relative;
+  width: 120px;
+  height: 40px;
+  font-family: 'PT Sans', Sans Serif;
+  text-transform: uppercase;
+  color: #fff;
+  background: #a4bf4d;
+  box-shadow: inset 0 20px 40px -10px #7b9d25;
+  border-radius: 40px;
+}
+.toggle--knob1 .toggle--btn1:before {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  transform: translateY(-50%);
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #f1f1f1;
+  box-shadow: 0 4px 10px 0 #999, inset 0 10px 10px 8px rgba(241, 241, 241, 0.6), inset 0 0 8px 0px #333, inset 0 0 0 13px #ccc, inset 0 0 0 14px #f1f1f1;
+  text-indent: -100%;
+}
+.toggle--knob1 .toggle--feature1 {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  height: 40px;
+  text-shadow: 0 1px 2px #666;
+}
+.toggle--knob1 .toggle--feature1:before, .toggle--knob1 .toggle--feature1:after {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.toggle--knob1 .toggle--feature1:before {
+  content: attr(data-label-on);
+  left: 20%;
+}
+.toggle--knob1 .toggle--feature1:after {
+  content: attr(data-label-off);
+  right: -60%;
+}
+.toggle--knob1 .toggle--checkbox1:checked + .toggle--btn1 {
+  background: #a2a2a2;
+  box-shadow: inset 0 20px 40px -10px #7e7e7e;
+}
+.toggle--knob1 .toggle--checkbox1:checked + .toggle--btn1:before {
+  left: 0;
+}
+.toggle--knob1 .toggle--checkbox1:checked + .toggle--btn1 .toggle--feature1:before {
+  left: -60%;
+}
+.toggle--knob1 .toggle--checkbox1:checked + .toggle--btn1 .toggle--feature1:after {
+  right: 20%;
+}
+
+.toggle2 {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  user-select: none;
+}
+
+.toggle--checkbox2 {
+  display: none;
+}
+
+.toggle--btn2 {
+  display: block;
+  margin: 0 auto;
+  font-size: 1.4em;
+  transition: all 350ms ease-in;
+}
+.toggle--btn2:hover {
+  cursor: pointer;
+}
+
+.toggle--btn2, .toggle--btn2:before, .toggle--btn2:after,
+.toggle--checkbox2,
+.toggle--checkbox2:before,
+.toggle--checkbox2:after,
+.toggle--feature2,
+.toggle--feature2:before,
+.toggle--feature2:after {
+  transition: all 250ms ease-in;
+}
+.toggle--btn2:before, .toggle--btn2:after,
+.toggle--checkbox2:before,
+.toggle--checkbox2:after,
+.toggle--feature2:before,
+.toggle--feature2:after {
+  content: '';
+  display: block;
+}
+
+.toggle--knob2 .toggle--btn2 {
+  position: relative;
+  width: 120px;
+  height: 40px;
+  font-family: 'PT Sans', Sans Serif;
+  text-transform: uppercase;
+  color: #fff;
+  background: #d1cb03;
+  box-shadow: inset 0 20px 40px -10px #d1cb03;
+  border-radius: 40px;
+}
+.toggle--knob2 .toggle--btn2:before {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  transform: translateY(-50%);
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #f1f1f1;
+  box-shadow: 0 4px 10px 0 #999, inset 0 10px 10px 8px rgba(241, 241, 241, 0.6), inset 0 0 8px 0px #333, inset 0 0 0 13px #ccc, inset 0 0 0 14px #f1f1f1;
+  text-indent: -100%;
+}
+.toggle--knob2 .toggle--feature2 {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  height: 40px;
+  text-shadow: 0 1px 2px #666;
+}
+.toggle--knob2 .toggle--feature2:before, .toggle--knob2 .toggle--feature2:after {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.toggle--knob2 .toggle--feature2:before {
+  content: attr(data-label-on);
+  left: 20%;
+}
+.toggle--knob2 .toggle--feature2:after {
+  content: attr(data-label-off);
+  right: -60%;
+}
+.toggle--knob2 .toggle--checkbox2:checked + .toggle--btn2 {
+  background: #a2a2a2;
+  box-shadow: inset 0 20px 40px -10px #7e7e7e;
+}
+.toggle--knob2 .toggle--checkbox2:checked + .toggle--btn2:before {
+  left: 0;
+}
+.toggle--knob2 .toggle--checkbox2:checked + .toggle--btn2 .toggle--feature2:before {
+  left: -60%;
+}
+.toggle--knob2 .toggle--checkbox2:checked + .toggle--btn2 .toggle--feature2:after {
+  right: 20%;
+}
+
+.toggle3 {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  user-select: none;
+}
+
+.toggle--checkbox3 {
+  display: none;
+}
+
+.toggle--btn3 {
+  display: block;
+  margin: 0 auto;
+  font-size: 1.4em;
+  transition: all 350ms ease-in;
+}
+.toggle--btn3:hover {
+  cursor: pointer;
+}
+
+.toggle--btn3, .toggle--btn3:before, .toggle--btn3:after,
+.toggle--checkbox3,
+.toggle--checkbox3:before,
+.toggle--checkbox3:after,
+.toggle--feature3,
+.toggle--feature3:before,
+.toggle--feature3:after {
+  transition: all 250ms ease-in;
+}
+.toggle--btn3:before, .toggle--btn3:after,
+.toggle--checkbox3:before,
+.toggle--checkbox3:after,
+.toggle--feature3:before,
+.toggle--feature3:after {
+  content: '';
+  display: block;
+}
+
+.toggle--knob3 .toggle--btn3 {
+  position: relative;
+  width: 120px;
+  height: 40px;
+  font-family: 'PT Sans', Sans Serif;
+  text-transform: uppercase;
+  color: #fff;
+  background: #df5b0b;
+  box-shadow: inset 0 20px 40px -10px #df5b0b;
+  border-radius: 40px;
+}
+.toggle--knob3 .toggle--btn3:before {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  transform: translateY(-50%);
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #f1f1f1;
+  box-shadow: 0 4px 10px 0 #999, inset 0 10px 10px 8px rgba(241, 241, 241, 0.6), inset 0 0 8px 0px #333, inset 0 0 0 13px #ccc, inset 0 0 0 14px #f1f1f1;
+  text-indent: -100%;
+}
+.toggle--knob3 .toggle--feature3 {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  height: 40px;
+  text-shadow: 0 1px 2px #666;
+}
+.toggle--knob3 .toggle--feature3:before, .toggle--knob3 .toggle--feature3:after {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.toggle--knob3 .toggle--feature3:before {
+  content: attr(data-label-on);
+  left: 20%;
+}
+.toggle--knob3 .toggle--feature3:after {
+  content: attr(data-label-off);
+  right: -60%;
+}
+.toggle--knob3 .toggle--checkbox3:checked + .toggle--btn3 {
+  background: #a2a2a2;
+  box-shadow: inset 0 20px 40px -10px #7e7e7e;
+}
+.toggle--knob3 .toggle--checkbox3:checked + .toggle--btn3:before {
+  left: 0;
+}
+.toggle--knob3 .toggle--checkbox3:checked + .toggle--btn3 .toggle--feature3:before {
+  left: -60%;
+}
+.toggle--knob3 .toggle--checkbox3:checked + .toggle--btn3 .toggle--feature3:after {
+  right: 20%;
+}
+@media only screen and (max-width:620px) {
+  .content, .content1, .footer {
+    width:100%;
+  }

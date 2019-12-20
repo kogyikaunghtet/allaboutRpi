@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Home</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+<h1><img class = "piimage" src = "raspberry.png">Four Channel Relay<br>Control using Raspberry Pi<a>Phoewa Science</a></h1>
+<div class="content">
+		<h2 class="headingOuter"><a>Light 1 Switch</a></h2>
+		<div class="toggle toggle--knob">
+			<input type="checkbox" id="toggle--knob" onClick= "checking1()" class="toggle--checkbox" checked>
+			<label class="toggle--btn" for="toggle--knob"><span class="toggle--feature" data-label-on="on"  data-label-off="off"></span></label>
+		</div>
+
+
+    <h2 class="headingOuter"><a>Light 3 Switch</a></h2>
+    <div class="toggle1 toggle--knob1">
+      <input type="checkbox" id="toggle--knob1" onClick= "checking3()" class="toggle--checkbox1" checked>
+      <label class="toggle--btn1" for="toggle--knob1"><span class="toggle--feature1" data-label-on="open"  data-label-off="close"></span></label>
+    </div>
+</div>
+
+
+<div class="content1">
+    <h2 class="headingOuter"><a>Light 2 Switch</a></h2>
+    <div class="toggle2 toggle--knob2">
+      <input type="checkbox" id="toggle--knob2" onClick= "checking2()" class="toggle--checkbox2" checked>
+      <label class="toggle--btn2" for="toggle--knob2"><span class="toggle--feature2" data-label-on="on"  data-label-off="off"></span></label>
+    </div>
+
+
+    <h2 class="headingOuter"><a>Light 4 Switch</a></h2>
+    <div class="toggle3 toggle--knob3">
+      <input type="checkbox" id="toggle--knob3" onClick= "checking4()" class="toggle--checkbox3" checked>
+      <label class="toggle--btn3" for="toggle--knob3"><span class="toggle--feature3" data-label-on="on"  data-label-off="off"></span></label>
+    </div>
+</div>
+
+<div class="footer"><center><a>Kaung Htet Htun (Phoewa Sciecne)</a></center></div>
+<script>
+function checking1(){
+  if (document.getElementById("toggle--knob").checked == false) {
+    document.location="cgi-bin/light1on.cgi";
+  }
+  else if (document.getElementById("toggle--knob").checked == true) {
+    document.location="cgi-bin/light1off.cgi";
+  }
+}
+
+function checking2(){
+  if (document.getElementById("toggle--knob2").checked == false) {
+    document.location="cgi-bin/light2on.cgi";
+  }
+  else if (document.getElementById("toggle--knob2").checked == true){
+    document.location="cgi-bin/light2off.cgi";
+  }
+}
+
+function checking3(){
+  if (document.getElementById("toggle--knob1").checked == false) {
+    document.location="cgi-bin/light3on.cgi";
+  }
+  else if (document.getElementById("toggle--knob1").checked == true) {
+    document.location="cgi-bin/light3off.cgi";
+  }
+}
+function checking4(){
+  if (document.getElementById("toggle--knob3").checked == false) {
+    document.location="cgi-bin/light4on.cgi";
+  }
+  else if (document.getElementById("toggle--knob3").checked == true){
+    document.location="cgi-bin/light4off.cgi";
+  }
+}
+</script>
+</body>
+</html>
