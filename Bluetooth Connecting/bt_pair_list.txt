@@ -1,0 +1,17 @@
+pi@raspberry:~$ sudo bluetoothctl
+Agent registered
+[bluetooth]# power on
+Changing power on succeeded
+[bluetooth]# agent on
+Agent is already registered
+[bluetooth]# default-agent
+Default agent request successful
+[bluetooth]# discoverable on
+Changing discoverable on succeeded
+[CHG] Controller C0:F8:DA:F5:7D:1D Discoverable: yes
+[bluetooth]# pairable on
+Changing pairable on succeeded
+[bluetooth]# scan on
+Discovery started
+[NEW] Controller B8:27:EB:7E:E8:78 raspberrypi [default]
+
