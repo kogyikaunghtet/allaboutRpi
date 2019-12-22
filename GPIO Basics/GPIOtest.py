@@ -3,12 +3,6 @@ print 'Enter GPIO BCM number:'
 gpio = raw_input()
 print 'Enter number of blinks you want:'
 blinks = raw_input()
-try:
-    f= open ('/sys/class/gpio/unexport','w')
-    f.write(str(gpio))
-    f.close()
-except IOError as e:
-    lol=0
 f= open ('/sys/class/gpio/export','w')
 f.write(str(gpio))
 f.close()
