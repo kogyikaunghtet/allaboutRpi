@@ -1,8 +1,7 @@
 #!/bin/bash
 gpio mode 25 out
 gpio mode 24 up
-while [ 1 ]
-do
+while [ 1 ];do
 button="$(gpio read 24)"
         if [[ $button == 0 ]]; then
                 gpio write 25 1
