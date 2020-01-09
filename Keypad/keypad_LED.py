@@ -13,8 +13,8 @@ KEYPAD = [
 password = ["1","2","3","4"]
 inputkey = [None] *4
 i = 0
-ROW_PINS = [5,6,13,19]
-COL_PINS = [26,21,20,16]
+ROW_PINS = [26,19,13,6]
+COL_PINS = [5,21,20,16]
 factory = rpi_gpio.KeypadFactory()
 keypad = factory.create_keypad(keypad=KEYPAD, row_pins=ROW_PINS, col_pins=COL_PINS)
 def printKey(key):
