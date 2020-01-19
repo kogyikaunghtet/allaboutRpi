@@ -1,0 +1,54 @@
+C&C Red Alert [INET].ttf
+ChiKareGo.ttf (သေးပြီး ဝါး)
+FreePixel.ttf
+ProggyTiny.ttf (သေးပြီး ဝါး)
+Volter__28Goldfish_29.ttf
+code2000.ttf
+miscfs_.ttf
+pixelmix.ttf (very big)
+pixelmix.ttf (သိပ်ဖတ်မရ)
+
+sudo apt-get install -y python-dev pkg-config
+sudo apt-get install -y libavformat-dev libavcodec-dev libavdevice-dev libavutil-dev libavfilter-dev libswscale-dev libavresample-dev
+git clone https://github.com/mikeboers/PyAV
+cd PyAV
+sudo pip install Cython
+sudo python setup.py build
+sudo python setup.py install
+==============================
+git clone --depth 1 git://git.videolan.org/x264	အဆင်မပြေ
+https://github.com/qupai/x264	ဒါဒေါင်း
+cd x264
+./configure --host=arm-unknown-linux-gnueabi --enable-static --disable-opencl
+make -j4
+sudo make install
+
+sudo apt-get install libxfixes-dev
+
+# build and make ffmpeg
+git clone --depth=1 git://source.ffmpeg.org/ffmpeg.git
+cd ffmpeg
+./configure --arch=armel --target-os=linux --enable-gpl --enable-libx264 --enable-nonfree -- enable-x11grab
+make -j4
+sudo make install
+==================================
+which python 3.5
+
+The terminal responds with: /usr/bin/python3.5
+In the hidden file .profile, set the value for VIRTUALENVWRAPPER_PYTHON. We use the nano editor to do this.
+
+sudo nano ~/.profile
+
+At the bottom of the file, type in the following line:
+
+VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3.5
+
+Save and exit nano. Now run .profile by typing:
+
+source ~/.profile
+
+Now install virtualenv.
+
+sudo pip3 install virtualenv
+====================================
+SSD1306, SSD1309, SSD1322, SSD1325, SSD1327, SSD1331, SSD1351, SH1106
