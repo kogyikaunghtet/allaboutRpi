@@ -21,6 +21,6 @@ while 1:
     font_path = os.path.abspath(os.path.join(os.path.dirname(__file__), 'fonts', 'FreePixel.ttf'))
     myfont = ImageFont.truetype(font_path, 15)
     with canvas(device) as draw:
-        draw.rectangle(device.bounding_box, outline="white", fill="black")
+        draw.rectangle(device.bounding_box, outline="white")
         draw.text((5, 2), "IP Address is", font=myfont, fill="white")
         draw.text((5, 15), get_ip_address('wlan0'), font=myfont, fill="white")

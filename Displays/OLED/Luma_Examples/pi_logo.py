@@ -1,11 +1,10 @@
-from luma.core.interface.serial import i2c
+from luma.core.interface.serial import spi
 from luma.core.render import canvas
-from luma.oled.device import ssd1306
+from luma.oled.device import ssd1351
 import os.path
 from PIL import Image
-serial = i2c(port=1, address=0x3C)
-device = ssd1306(serial, width=128, height=32)
-
+serial = spi(device=0, port=0)
+device = ssd1351(serial)
 while 1:
     img_path = os.path.abspath(os.path.join(os.path.dirname(__file__), 'images', 'pi_logo.png'))
     logo = Image.open(img_path).convert("RGBA")
@@ -13,7 +12,7 @@ while 1:
     background = Image.new("RGBA", device.size, "white")
     posn = ((device.width - logo.width) // 2, 0)
 
-    while 1:
+    while True:
         for angle in range(0, 360, 2):
             rot = logo.rotate(angle, resample=Image.BILINEAR)
             img = Image.composite(rot, fff, rot)

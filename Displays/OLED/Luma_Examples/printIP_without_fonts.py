@@ -17,6 +17,6 @@ def get_ip_address(ifname):
 
 while 1:
   with canvas(device) as draw:
-    draw.rectangle(device.bounding_box, outline="white", fill="black")
+    draw.rectangle(device.bounding_box, outline="white")
     draw.text((25, 2), "IP Address is", fill="white")
     draw.text((25, 15), get_ip_address('wlan0'), fill="white")

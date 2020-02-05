@@ -1,0 +1,3 @@
+git clone git://github.com/doceme/py-spidev
+cd py-spidev/
+sudo python setup.py install
