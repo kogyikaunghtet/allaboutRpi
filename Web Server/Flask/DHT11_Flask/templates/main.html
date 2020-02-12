@@ -1,0 +1,73 @@
+<!doctype html>
+<html> 
+<head>
+    <title>Dynamic Resize</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style>
+    body {
+        text-align: center;
+        padding: 0px;
+        margin: 0px;
+    }
+    .clear:before,
+    .clear:after {
+        content: "";
+        display: table;
+    }
+    .clear:after {
+        clear: both;
+    }
+    .clear {
+        *zoom: 1;
+    }
+    .wrapper {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: 30px;
+        border: 1px solid #cccccc;
+    }
+    .gauge {
+        display: block;
+        float: left;
+    }
+    #g1 {
+        width: 50%;
+    }
+    #g2 {
+        width: 50%;
+    }
+    </style>
+</head>
+<body>
+    <div class="wrapper clear">
+        <div id="g1" class="gauge"></div>
+        <div id="g2" class="gauge"></div>
+    </div>
+    <script src="{{ url_for('static', filename='raphael-2.1.4.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='justgage.js') }}"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+        var g1, g2, g3;
+ 
+        var g1 = new JustGage({
+            id: "g1",
+            value: {{temperature}},
+            min: 0,
+            max: 50,
+            title: "Temperature",
+        });
+ 
+        var g2 = new JustGage({
+            id: "g2",
+            value: {{humidity}},
+            min: 0,
+            max: 100,
+            title: "Humidity",
+        });
+    });
+    </script>
+</body>
+</html>
