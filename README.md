@@ -3,7 +3,7 @@
 
 > ကောင်းထက်ထွန်း (Phoewa Science)
 
-![rpi book](rpi_book.png)
+![rpi book](rpi_book.jpg)
 <!--ts-->
 ## မာတိကာ
    * အခန်း(၁)
