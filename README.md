@@ -1,8 +1,7 @@
 # allaboutRpi
 all about Raspberry Pi
 ![rpi book](rpi_book.png)
-မာတိကာ
-=================
+<h1>မာတိကာ</h1>
 <!--ts-->
    * အခန်း(၁)
    * မိတ်ဆက်
