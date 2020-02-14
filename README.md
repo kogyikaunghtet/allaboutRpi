@@ -2,7 +2,7 @@
 all about Raspberry Pi
 ![rpi book](rpi_book.png)
 <!--ts-->
-# မာတိကာ <h2>
+[မာတိကာ]
    * အခန်း(၁)
    * မိတ်ဆက်
       * ၁.၁ Operating Systems
