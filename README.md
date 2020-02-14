@@ -1,8 +1,8 @@
 # allaboutRpi
 all about Raspberry Pi
 ![rpi book](rpi_book.png)
-# မာတိကာ <h1>
 <!--ts-->
+# မာတိကာ <h2>
    * အခန်း(၁)
    * မိတ်ဆက်
       * ၁.၁ Operating Systems
