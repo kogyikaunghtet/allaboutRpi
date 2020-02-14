@@ -1,7 +1,7 @@
 # all about Raspberry Pi
 > BeagleBone, Banana Pi, Orange Pi တို့ကဲ့သို့ အမျိုးမျိုးသော Single Board Computer တွေ ထွက်ရှိတဲ့အထဲမှာ Raspberry Pi က Community Supporting အကောင်းဆုံးဖြစ်ပြီး စွမ်းဆောင်ရည်လည်း မြင့်မားလို့ ကမ္ဘာတစ်ဝှမ်းမှာ ကျယ်ပြန့်စွာ အသုံးပြုနေကြပါပြီ။ ပြည်တွင်းမှာလည်း အီလက်ထရောနစ် ဝါသနာရှင် တွေအပြင် ကွန်ပျူတာတက္ကသိုလ်နဲ့ နည်းပညာတက္ကသိုလ် အသီးသီးက ကျောင်းသား၊ ကျောင်းသူတွေရဲ့ Project တွေ၊ Thesis တွေကြားမှာ ဝင်ရောက် နေရာယူလာပြီ ဖြစ်ပါတယ်။ Single Board Microcontroller တစ်ခုဖြစ်တဲ့ Arduino ကို ရင်းနှီးကြပေမယ့် Raspberry Pi ကို စိမ်းနေသူများအတွက် ရည်ရွယ်ပြီး သင်ယူရ လွယ်ကူတဲ့ Python Programming Language နဲ့ လေ့လာနိုင်အောင် ဒီစာအုပ်ကို ရေးသား ထုတ်ဝေလိုက်ရခြင်း ဖြစ်ပါတယ်။
 
-ကောင်းထက်ထွန်း (Phoewa Science)
+> ကောင်းထက်ထွန်း (Phoewa Science)
 
 ![rpi book](rpi_book.png)
 <!--ts-->
