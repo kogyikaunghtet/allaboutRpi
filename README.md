@@ -1,5 +1,4 @@
-# allaboutRpi
-all about Raspberry Pi
+# all about Raspberry Pi
 ![rpi book](rpi_book.png)
 <!--ts-->
 ## မာတိကာ
