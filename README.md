@@ -88,6 +88,7 @@
       * ၈.၁.၄ LED မီး အဖွင့်အပိတ် ပြုလုပ်ခြင်း
       * ၈.၁.၅ Python ဖြင့် CGI script ရေးသားခြင်း
       * ၈.၂ Nginx Web Server တည်ဆောက်ခြင်း
+      * ၈.၃ Flask Micro Web Framework တည်ဆောက်ခြင်း
    * အခန်း(၉)
    * IoT (Internet of Things)
       * ၉.၁ Thingspeak IoT Platform
